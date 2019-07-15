@@ -1,0 +1,28 @@
+.list-todo {
+  display: flex;
+  border-bottom: 1px solid #dedede;
+  padding: 6px;
+  align-items: center;
+
+  & .list-checkbox {
+    flex: 0 0 30px;
+  }
+
+  & .list-todo-name {
+    font-size: 20px;
+  }
+
+  & .list-todo-name,
+  & .form-control {
+    flex: 1 1 auto;
+  }
+
+  & .btn {
+    flex: 0 0 80px;
+    margin: 6px;
+  }
+}
+
+.strike {
+  text-decoration: line-through;
+}

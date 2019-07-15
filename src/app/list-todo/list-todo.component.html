@@ -1,0 +1,20 @@
+<div class="list-todo">
+  <div class="list-checkbox">
+      <input type="checkbox" [(ngModel)]="toDo.isCompleted" name="iscompleted"
+      (change)="todoService.publishToDoList()"/>
+  </div>
+
+  <ng-container *ngIf="!showEdit; else edit;">
+    <div class="list-todo-name">{{toDo.name}}</div>
+    <button class="btn"
+     (click)="showEdit = true">Edit</button>
+  </ng-container>
+
+  <button class="btn btn--danger" (click)="todoService.removeItem(toDo)">Delete</button>
+</div>
+
+<ng-template #edit>
+  <input type="text" class="form-control" [(ngModel)]="toDo.name" name="name"
+  (keyup.enter)="showEdit = false"/>
+  <button class="btn" (click)="showEdit = false">Save</button>
+</ng-template>

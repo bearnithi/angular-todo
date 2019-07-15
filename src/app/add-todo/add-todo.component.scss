@@ -1,0 +1,11 @@
+.add-todo {
+  display: flex;
+
+  & > .form-group {
+    flex: 1 1 auto;
+  }
+
+  & > .btn {
+    flex: 0 1 60px;
+  }
+}

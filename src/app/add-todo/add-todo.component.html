@@ -1,0 +1,9 @@
+<div class="add-todo">
+  <div class="form-group">
+    <input type="text" name="todo"
+     [(ngModel)]="todo" class="form-control" placeholder="Add TODO"
+     (keydown.enter)="addItem()" />
+  </div>
+  <button class="btn" [disabled]="!todo" (click)="addItem()">Add</button>
+
+</div>

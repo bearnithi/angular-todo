@@ -1,0 +1,14 @@
+.todo-container {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #dedede;
+  box-shadow: 2px 2px 1rem #dedede;
+  padding: 10px;
+}
+
+.header-text {
+  border-bottom: 2px solid;
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+  color: var(--color-primary);
+}

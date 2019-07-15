@@ -1,0 +1,11 @@
+<div class="list-todo">
+    <div class="list-checkbox">
+        <input type="checkbox" [(ngModel)]="toDo.isCompleted" name="iscompleted"
+        (change)="todoService.publishToDoList()"/>
+    </div>
+
+    <div class="list-todo-name strike">{{toDo.name}}</div>
+
+
+    <button class="btn btn--danger" (click)="todoService.removeItem(toDo)">Delete</button>
+  </div>
